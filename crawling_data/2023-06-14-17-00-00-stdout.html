@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<title></title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" name="viewport"/>
+<link href="" rel="apple-touch-icon"/>
+<link href="/static/css/jquery-ui.min.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/static/css/jquery.bxslider.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/static/css/style_m.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="/static/js/lib/jquery-2.2.4.min.js"></script>
+<script src="/static/js/lib/jquery-ui.min.js"></script>
+<script src="/static/js/lib/jquery.bxslider.js"></script>
+<script src="/static/js/ui_m.js"></script>
+<script type="text/javascript">
+<!--
+// 주소창 자동 닫힘
+window.addEventListener("load", function()
+{
+	setTimeout(loaded, 100); 
+}, false);
+
+function loaded()
+{
+	window.scrollTo(0, 1);
+}
+//-->
+</script>
+<style>
+    	@media print{
+    		header, footer, .gray2Box, .downloadArea{display:none;}
+    		.tkInfo{width:1100px !important;}
+    	}
+    	.pop h3.titleTop{margin-top:-50px; margin-bottmo:-200px;}
+    	.pop .headerTit{color:#000;}
+    </style>
+<script src="/static/js/lib/require.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/tkSearch.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="tracking pop">
+<h2 class="headerTit">로젠택배 배송조회</h2>
+<h3 class="subTit">물품정보</h3>
+<table class="verticalTable">
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:*;"/>
+</colgroup>
+<tbody>
+<tr class="empty">
+<td colspan="2"><span>배송자료를 조회할 수 없습니다!<br/>아래사항을 체크해 보세요!</span></td>
+</tr>
+</tbody>
+</table>
+<!-- 물품정보가 없을때 보이기-->
+<div class="emptyTxt mgt20">
+<ul>
+<li>1. 물품발송업체에서 송장번호는 수화인에게 알려주었으나 물량 수급이 제때 이루어지지 않아 물품을 발송하지 못한 경우</li>
+<li>2. 송화주가 송장번호를 수화인에게 알려주고 고의 또는 과실로 물품을 발송하지 않은 경우</li>
+<li>3. 물건이 택배사에 도착했으나 분류작업을 하지 않은 경우(이같은 경우는 몇시간 후나 다음날 조회해 보실 수 있습니다)</li>
+<li>4. 송화주가 송장번호를 잘못 알려 준 경우 - 물품정보가(발송지점/배송지점) 없을때만 해당</li>
+<li>5. 수화주 실수로 송장번호를 잘못 입력한 경우 - 물품정보가(발송지점/배송지점) 없을때만 해당</li>
+</ul>
+<ul class="poolMark">
+<li>※ 참고 : 수기송장 중 전산등록이 누락된 경우 물품정보가 조회 되지 않을 수도 있습니다.</li>
+</ul>
+</div>
+<!-- //물품정보가 없을때 보이기-->
+<div class="mgt50"></div>
+<a class="btnRound01 mgt20" href="../tkSearch" id="slipNoBtn">다시 조회하기</a>
+<div class="mgt50"></div>
+<div class="appDown">
+<strong class="tit">로젠택배 <span class="ffEng">APP</span></strong>
+<p>실시간 배송 서비스는 기본! 타 택배사 연동부터 쇼핑몰 연동까지. <br/>로젠택배 앱으로 맞춤형 서비스를 받아보세요</p>
+<a class="ios mgt30" href="https://itunes.apple.com/kr/app/%EB%A1%9C%EC%A0%A0%ED%83%9D%EB%B0%B0/id1434491411?mt=8" target="blank">ios down</a>
+<a class="android mgt5" href="https://play.google.com/store/apps/details?id=com.ilogen.delivery" target="blank">android down</a>
+</div>
+</div>
+</div>
+<div class="dimmed"></div>
+<!--
+<div class="layerPop signPop">
+	<div class="layerTit">
+		<div class="tit">인수자 서명</div>
+		<a href="#" class="btnClosePopup">팝업 닫기</a>
+	</div>
+	<div class="popupCon">
+		
+	</div>
+</div>
+-->
+</body>
+</html>
+
